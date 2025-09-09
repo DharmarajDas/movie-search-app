@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h3 class="logo">MovieApp</h3>
+      <form id="form">
+        <input type="text" placeholder="Search movies..." id="search" class="search" />
+      </form>
+    </header>
+
+    <!-- Trending / Search Results Section -->
+    <section id="top-section">
+      <h1 class="section-title" id="top-section-title">Trending This Week</h1>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" id="trending-left">&#10094;</button>
+        <div id="top-container" class="carousel"></div>
+        <button class="carousel-btn right" id="trending-right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section>
+      <h1 class="section-title">Popular Movies</h1>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" id="popular-left">&#10094;</button>
+        <div id="popular-container" class="carousel"></div>
+        <button class="carousel-btn right" id="popular-right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <h1 hidden id="recommendations-header" class="section-title">
+      Recommendations based on search results
+    </h1>
+    <div id="recommendations" class="movies-grid"></div>
+
+    <div class="footer">
+      <h4>Designed & Developed with ❤️ by Dharmaraj</h4>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
